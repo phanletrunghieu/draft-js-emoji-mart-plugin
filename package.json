@@ -1,6 +1,6 @@
 {
-  "name": "draft-js-emoji-mart-plugin",
-  "version": "0.0.6",
+  "name": "draft-js-emoji-mart-xplugin",
+  "version": "0.0.8",
   "description": "Emoji-mart plugin for DraftJS.",
   "browserslist": "> 0.25%, not dead",
   "main": "lib",
@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/zamarawka/draft-js-emoji-mart-plugin.git"
+    "url": "git+ssh://git@github.com/phanletrunghieu/draft-js-emoji-mart-plugin.git"
   },
   "author": "zamarawka <somebody.told@mail.ru> (https://github.com/zamarawka)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zamarawka/draft-js-emoji-mart-plugin/issues"
   },
-  "homepage": "https://github.com/zamarawka/draft-js-emoji-mart-plugin#readme",
+  "homepage": "https://github.com/phanletrunghieu/draft-js-emoji-mart-plugin#readme",
   "dependencies": {
     "emoji-regex": "^7.0.3",
     "find-with-regex": "^1.1.3"
@@ -58,5 +58,8 @@
     "flow-bin": "^0.93.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }

@@ -66,7 +66,14 @@ export default function ({
       throw new Error('Emoji-mart plugin: handle emoji fired on unbinded instace.');
     }
 
-    const newEditorState = addEmoji(store.getEditorState(), emojiSymbol.native);
+    let emoji = emojiSymbol.native
+
+    // custom
+    if (!emoji && emojiSymbol.short_names && emojiSymbol.short_names.length > 0) {
+      emoji = ":"+emojiSymbol.short_names[0]+":"
+    }
+
+    const newEditorState = addEmoji(store.getEditorState(), emoji);
 
     if (!store.setEditorState) {
       throw new Error('Emoji-mart plugin: handle emoji fired on unbinded instace.');
